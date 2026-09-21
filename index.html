@@ -205,23 +205,31 @@
                 padding: 0;
             }
 
+            /* La pantalla de la carta deja de centrar el contenido */
             #letterScreen {
-                align-items: flex-start;
+                display: block;
+                min-height: 100vh;
+                padding: 0;
             }
 
+            /* Posición de la carta */
             .note-wrapper {
-                width: 84%;
-                margin: 350px auto 0;
                 position: relative;
+                width: 84%;
+                max-width: 600px;
+                margin: 350px auto 0;
             }
 
+            /* Carta */
             .note-card {
                 position: relative;
                 bottom: auto;
                 z-index: 2;
                 padding: 20px 25px 28px;
+                border-radius: 18px;
             }
 
+            /* 🌻 RAMO */
             .top-image {
                 width: 250px;         
                 max-width: none;
@@ -240,35 +248,15 @@
             }
 
             .note-card p {
+                color: #555;
                 font-size: 16px;
                 line-height: 1.6;
-                margin-bottom: 20px;
+                margin: 0 0 20px;
             }
 
             .signature {
                 font-size: 19px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .welcome h1 {
-                font-size: 27px;
-            }
-
-            .note-wrapper {
-                position: relative;
-                width: 84%;
-                max-width: 600px;
-                margin: 270px auto 0;
-            }
-
-            .note-card {
-                padding: 35px 16px 22px;
-            }
-
-            .top-image {
-                width: 95px;
-                top: -48px;
+                margin-top: 5px;
             }
         }
 
