@@ -200,40 +200,53 @@
         }
 
         @media (max-width: 600px) {
+
             .screen {
-                padding: 20px 15px;
+                padding: 0;
             }
 
-            .welcome {
-                padding: 20px 10px;
-            }
-
-            .welcome h1 {
-                margin-bottom: 25px;
-            }
-
-            .surprise-button {
-                padding: 13px 26px;
+            #letterScreen {
+                align-items: flex-start;
             }
 
             .note-wrapper {
-                width: 94%;
-                margin-top: 65px;
-                margin-bottom: 25px;
+                width: 84%;
+                margin: 350px auto 0;
+                position: relative;
             }
 
             .note-card {
-                padding: 38px 20px 25px;
-                border-radius: 18px;
+                position: relative;
+                bottom: auto;
+                z-index: 2;
+                padding: 20px 25px 28px;
             }
 
             .top-image {
-                width: 110px;
-                top: -55px;
+                width: 250px;         
+                max-width: none;
+                height: auto;
+                position: absolute;
+                top: 60px;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 1;
             }
 
             .note-card h1 {
-                margin-top: 8px;
+                margin: 3px 0 20px;
+                font-size: 25px;
+                line-height: 1.25;
+            }
+
+            .note-card p {
+                font-size: 16px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+            .signature {
+                font-size: 19px;
             }
         }
 
@@ -243,7 +256,7 @@
             }
 
             .note-wrapper {
-                width: 96%;
+                width: 90%;
             }
 
             .note-card {
@@ -307,7 +320,7 @@
                 </p>
 
                 <p>
-                    Aunque estas flores no sean reales, la intención es que<br>tengas un pequeño recuerdo de este día y la pases lindo.
+                    Aunque estas flores no sean reales, la intención es que tengas un pequeño recuerdo de este día y la pases lindo.
                 </p>
 
                 <div class="signature">
